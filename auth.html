@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta charset="utf-8">
+        <link id="css_theme" rel="stylesheet" type="text/css" href="./css/auth_reg.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/auth.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="info">
+                <div>
+                    <form id="form" enctype="multipart/form-data">
+                        <h2>Авторизация</h2>
+                        <p>Введите свой login/email: <br> 
+                            <input type="text" id="credentials" name="text" minlength="3" autocomplete="off" required>
+                        </p>
+                        <p>Введите свой password: <br> 
+                            <input type="password" id="password" name="password" autocomplete="off" minlength="8" required>
+                        </p>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="added-main">
+            <div class="added-info">
+                <a href="/reg.html"><button class="main-button">Регистрация</button></a>
+                <button id="theme" class="main-button">Сменить тему</button>
+            </div>
+        </div>
+    </body>
+    <script src="js/theme_1.js"></script>
+</html>

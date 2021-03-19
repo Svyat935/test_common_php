@@ -1,0 +1,175 @@
+body{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #D0F9FC;
+}
+
+.main{
+    background: #2AB3BC;
+    border: #2AB3BC 1px solid;
+    width: 40%;
+    text-align: center;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px auto;
+}
+
+.info{
+    height: 80%;
+    width: 100%;
+    margin: 0px 1px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.main-button{
+    background-color: white;
+    color: #2AB3BC;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: black; 
+    border: 2px solid white;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #2AB3BC;
+} 
+
+.main-button:hover {
+    background-color: #2AB3BC;
+    color: white;
+}
+
+.added-main{
+    margin-top: 20px;
+    background: #2AB3BC;
+    border: #2AB3BC 1px solid;
+    width: 40%;
+    text-align: center;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button{
+    background-color: #2AB3BC; /* Green */
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 20px;
+    color: black; 
+    border: 2px solid #2AB3BC;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: white;
+} 
+
+.form-button:hover {
+    background-color: white;
+    color: #2AB3BC;
+}
+
+
+#form{
+    font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+
+#form h2{
+    background: #2AB3BC;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+form input[type="text"],
+form input[type="date"],
+#form input[type="datetime"],
+#form input[type="email"],
+#form input[type="number"],
+#form input[type="search"],
+#form input[type="time"],
+#form input[type="url"],
+#form input[type="password"],
+#form textarea,
+#form select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+#form input[type="text"]:focus,
+#form input[type="date"]:focus,
+#form input[type="datetime"]:focus,
+#form input[type="email"]:focus,
+#form input[type="number"]:focus,
+#form input[type="search"]:focus,
+#form input[type="time"]:focus,
+#form input[type="url"]:focus,
+#form input[type="password"]:focus,
+#form textarea:focus,
+#form select:focus
+{
+	box-shadow: 0 0 5px #2AB3BC;
+	padding: 3%;
+	border: 1px solid #2AB3BC;
+}
+
+#form input[type="submit"],
+#form input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #2AB3BC;
+	border: 2px solid #2AB3BC;	
+	color: #fff;
+    margin-top: 10px;
+}
+#form input[type="submit"]:hover,
+#form input[type="button"]:hover{
+	background-color: white;
+    color: #2AB3BC;
+}
+
+#recaptchaError{
+    display: none;
+}

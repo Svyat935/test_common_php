@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta charset="utf-8">
+        <link id="css_theme" rel="stylesheet" type="text/css" href="./css/auth_reg.css">  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="js/reg.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="info">
+                <form id="form" enctype="multipart/form-data">
+                    <h2>Регистрация</h2>
+                    <p>Введите имя:<br> 
+                        <input type="text" id="firstname" name="firstname" minlength="3" autocomplete="off" required>
+                    </p>
+                    <p>Введите фамилию:<br> 
+                        <input type="text" id="surname" name="surname" minlength="3" autocomplete="off" required>
+                    </p>    
+                    <p>Введите свой email: <br> 
+                        <input type="text" id="email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off" required>
+                    </p>
+                    <p>Введите свой login: <br> 
+                        <input type="text" id="login" name="login" minlength="3" autocomplete="off" required>
+                    </p>
+                    <p>Введите свой password: <br> 
+                        <input type="password" id="password" name="password" autocomplete="off" minlength="8" required>
+                    </p>
+                    <p>Подтверждение пароля: <br> 
+                        <input type="password" id="password_check" name="password_check" autocomplete="off" minlength="8" required>
+                    </p>
+                    <p><input type="checkbox" id="rules" name="rules" autocomplete="off" value=1 required>Принимаю правила</p>
+                    <select id="age" name="age" size="2" autocomplete="off" required>
+                        <option value="1">Мне 18 лет</option>
+                        <option value="0">Нет 18 лет</option>
+                    </select></p>
+                    <p>Выберите ваш пол:<br> 
+                    <input type="radio" name="sex" value="male" autocomplete="off">Мужчина<br>
+                    <input type="radio" name="sex" value="female" autocomplete="off">Женщина</p>
+                    <div id="cap" class="g-recaptcha" data-sitekey="CAPTCHA_CODE"></div>
+                    <div class="text-danger" id="recaptchaError"></div>
+                    <input class="form-button" type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+        <div class="added-main">
+            <div class="added-info">
+                <a href="/auth.html"><button class="main-button">Авторизация</button></a>
+                <button id="theme" class="main-button">Сменить тему</button>
+            </div>
+        </div>
+    </body>
+    <script src="js/theme_1.js"></script>
+</html>
